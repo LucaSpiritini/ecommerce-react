@@ -1,11 +1,14 @@
-import { Box } from "@mui/material"
-import Navbar from "./components/Navbar"
+import Header from "./components/Header/Header"
+import HeroSection from "./components/Hero/Hero"
+import FeaturedCourses from "./components/FeaturedCourses/FeaturedCourses"
 
 const App = () => {
   return (
-    <Box>
-      <Navbar/>
-    </Box>
+    <>
+      <Header />
+      <HeroSection />
+      <FeaturedCourses />
+    </>
   )
 }
 
