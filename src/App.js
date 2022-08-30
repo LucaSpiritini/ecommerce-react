@@ -1,14 +1,17 @@
-import Header from "./components/Header/Header"
-import HeroSection from "./components/Hero/Hero"
-import FeaturedCourses from "./components/FeaturedCourses/FeaturedCourses"
+import React from "react"
+import Layout from "./components/Layout"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import HomeScreen from "./Screens/HomeScreen"
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <HeroSection />
-      <FeaturedCourses />
-    </>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route index element={ <HomeScreen /> } />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   )
 }
 

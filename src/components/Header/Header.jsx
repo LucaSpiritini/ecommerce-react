@@ -43,7 +43,7 @@ const Header = () => {
               display: { xs: "none", md: "flex" },
             }}
           >
-            <Box component="img" src={logo_desk} sx={{ width: "100px" }} />
+            <Box component="img" src={logo_desk} sx={{ width: "200px" }} />
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -70,7 +70,7 @@ const Header = () => {
               flexGrow: 1,
             }}
           >
-            <Box component="img" src={logo_mob} sx={{ width: "100px" }} />
+            <Box component="img" src={logo_mob} sx={{ width: "150px" }} />
           </Typography>
 
           <Box
