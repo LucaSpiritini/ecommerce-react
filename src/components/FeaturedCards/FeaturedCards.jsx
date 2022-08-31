@@ -5,8 +5,7 @@ import Divider from '@mui/material/Divider'
 import Link from '@mui/material/Link'
 import Grid from '@mui/material/Grid'
 
-//IMPORTING SVG'S AND IMAGES
-import photo_card from '../../assets/photo_card.png'
+import photo_card from '../../assets/juguete-perro-mordillo.png'
 import plus from '../../assets/plus.svg'
 
 import styles from './styles'
@@ -24,29 +23,31 @@ const FeaturedCards = () => {
           {[1, 2, 3, 4, 5, 6].map((_, index) => {
             return (
               <Grid item xs={4} sm={4} md={4} key={index}>
+
                 <Card sx={styles.card}>
                   <Box sx={styles.blockPhoto}>
                     <Box
                       component='img'
                       src={photo_card}
-                      sx={{ width: '100%' }}
+                      sx={{ maxWidth: "200px", width: '100%', textAlign: 'center', }}
                     />
-                    <Box sx={styles.language}>language</Box>
+                    <Box sx={styles.category}>Dog</Box>
                   </Box>
                   <Box sx={{ textAlign: 'center', m: '24px 0' }}>
-                    Language Writing
+                    Product Title
                   </Box>
                   <Divider />
                   <Box sx={styles.footerCard}>
                     <Box sx={styles.price}>$100</Box>
                     <Link sx={styles.link}>
                       <Box component='span' sx={{ mr: '5px' }}>
-                        enroll now
+                        add to cart
                       </Box>
                       <Box component='img' src={plus} />
                     </Link>
                   </Box>
                 </Card>
+
               </Grid>
             )
           })}

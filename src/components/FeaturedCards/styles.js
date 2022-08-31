@@ -2,18 +2,21 @@ const styles = {
   wrapper: (theme) => ({
     maxWidth: '1240px',
     m: 'auto',
-    p: '10px 20px',
+    p: '30px',
   }),
   card: {
     border: '0.5px solid #9980B7',
     boxShadow: '0px 4px 4px rgba(0,0,0,0.2)',
     borderRadius: '8px',
     p: '24px 24px 48px',
+    maxWidth: "350px",
   },
   blockPhoto: {
     position: 'relative',
+    textAlign: 'center',
+    m: "auto",
   },
-  language: {
+  category: {
     position: 'absolute',
     background: '#673F86',
     borderRadius: '11px',
@@ -41,11 +44,12 @@ const styles = {
   },
   link: {
     display: 'flex',
+    cursor: "pointer",
     alignItems: 'center',
     fontSize: '20px',
     lineHeight: '24px',
     fontWeight: 500,
-    textDecorationLine: 'underline',
+    textDecoration: 'none',
     textTransform: 'uppercase',
     color: '#000',
     '&>img': {

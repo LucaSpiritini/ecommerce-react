@@ -2,13 +2,13 @@ import img_bg from '../../assets/images.png'
 
 const styles = {
   subscribe: {
-    p: '100px 20px 100px',
+    p: '100px 0 100px',
   },
   wrapper: (theme) => ({
     boxSizing: 'border-box',
     maxWidth: '1240px',
     margin: 'auto',
-    background: `#673F86 url(${img_bg}) no-repeat center`,
+    background: `#673F86`,
     borderRadius: '20px',
     p: '48px 5px',
     textAlign: 'center',

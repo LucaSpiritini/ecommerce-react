@@ -10,9 +10,8 @@ import styles from "./styles";
 const pages = [
   { title: "Home", arrow: false },
   { title: "About", arrow: false },
-  { title: "Course", arrow: true },
-  { title: "Page", arrow: true },
-  { title: "Blog", arrow: true },
+  { title: "Categories", arrow: true },
+  { title: "Products", arrow: true },
   { title: "Contact", arrow: false },
 ];
 

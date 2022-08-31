@@ -1,8 +1,7 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 
-//IMPORTING SVG'S
-import foto_group from '../../assets/Group.png'
+import foto_group from '../../assets/group.webp'
 import foro_1 from '../../assets/group1.svg'
 import foro_2 from '../../assets/group2.svg'
 import foro_3 from '../../assets/group3.svg'
@@ -12,18 +11,18 @@ import styles from './styles'
 const info = [
   {
     img: foro_1,
-    title: 'Online Degrees',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,',
+    title: 'Great disscounts',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam',
   },
   {
     img: foro_2,
-    title: 'Short courses',
+    title: 'Make a wish list',
     text: 'Lorem ipsum dolor sit amet, consectetur',
   },
   {
     img: foro_3,
-    title: 'Expert Traning',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,',
+    title: 'Big community',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
   },
 ]
 
@@ -35,11 +34,11 @@ const Benefits = () => {
           <Box
             component='img'
             src={foto_group}
-            sx={{ width: '100%', maxWidth: '575px' }}
+            sx={{ width: '100%', maxWidth: '575px', borderRadius: "50%", }}
           />
           <Box>
             <Typography variant='h2' sx={styles.title}>
-              Benifits from our online learning
+              Benefits for our members
             </Typography>
             <Box sx={{ mt: '30px' }}>
               {info.map((item, index) => {

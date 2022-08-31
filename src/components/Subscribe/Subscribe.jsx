@@ -12,10 +12,10 @@ const Subscribe = () => {
     <Box sx={styles.subscribe}>
       <Box sx={styles.wrapper}>
         <Typography sx={styles.title}>
-          Subscribe For Get Update <br /> Every New Courses
+          Subscribe For Get Update <br /> Every New Product
         </Typography>
         <Typography sx={styles.text}>
-          10k+ students daily learn with Eduvi. Subscribe for new courses.
+          10+ users daily shop with us, subscribe for news
         </Typography>
         <Paper component='form' sx={styles.paper}>
           <InputBase

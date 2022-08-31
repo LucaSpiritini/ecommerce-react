@@ -14,11 +14,11 @@ import logo from '../../assets/logo.svg'
 
 import styles from './styles'
 
-const company = ['about', 'Parteners', 'careers', 'Teaching Center']
-const categories = ['Classroom courses', 'Video Courses', 'Offline Courses']
+const company = ['about', 'careers']
+const categories = ['Dog', 'Cat', 'Fish', 'Bird']
 const support = ['contact us', 'site feedback']
 const getInTouch = ['Privacy', 'Help', 'Contact']
-const navItems = ['About', 'Careers', 'Resource center', 'Guides']
+const navItems = ['Resource center', 'Guides']
 
 const Footer = () => {
   return (
@@ -38,7 +38,7 @@ const Footer = () => {
             </List>
           </Grid>
           <Grid item xs={6} sm={4} md={3}>
-            <Typography variant='h3'>categories</Typography>
+            <Typography variant='h3'>Categories</Typography>
             <List>
               {categories.map((item, index) => {
                 return (
@@ -50,7 +50,7 @@ const Footer = () => {
             </List>
           </Grid>
           <Grid item xs={6} sm={4} md={3}>
-            <Typography variant='h3'>support</Typography>
+            <Typography variant='h3'>Support</Typography>
             <List>
               {support.map((item, index) => {
                 return (
@@ -62,7 +62,7 @@ const Footer = () => {
             </List>
           </Grid>
           <Grid item xs={6} sm={4} md={3}>
-            <Typography variant='h3'>get in touch</Typography>
+            <Typography variant='h3'>Get in touch</Typography>
             <List>
               {getInTouch.map((item, index) => {
                 return (
@@ -87,10 +87,10 @@ const Footer = () => {
         </Grid>
         <Box sx={styles.copyrightBlock}>
           <Typography sx={styles.logo}>
-            <Box component='img' src={logo} sx={{ width: "150px" }} />
+            <Box component='img' src={logo} sx={{ width: "200px" }} />
           </Typography>
           <Typography sx={styles.copyrightText}>
-            Copyright © 2022 Turitor. All Right Reserved.
+            Copyright © 2022. All Right Reserved.
           </Typography>
           <Box sx={styles.nav}>
             {navItems.map((item, index) => {

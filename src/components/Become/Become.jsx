@@ -3,8 +3,8 @@ import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import Wrapper from '../Wrapper'
 
-import become_an_instructor from '../../assets/become_an_instructor.svg'
-import foto_become from '../../assets/become.png'
+import become_a_member from '../../assets/become_a_member.svg'
+import become_photo from '../../assets/become_photo.webp'
 import plus from '../../assets/plus_white.svg'
 
 import styles from './styles'
@@ -13,11 +13,11 @@ const Become = () => {
   return (
     <Box sx={styles.become}>
       <Wrapper>
-        <Box component='img' src={become_an_instructor} />
+        <Box component='img' src={become_a_member} />
         <Box sx={styles.info}>
           <Box>
             <Typography variant='h2' sx={styles.title}>
-              Become an Instructor
+              Become a Member
             </Typography>
             <Typography variant='body2' sx={styles.text}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
@@ -32,10 +32,10 @@ const Become = () => {
             </Typography>
             <Button sx={styles.btn}>
               <Box component='img' src={plus} sx={{ mr: '14px' }} />{' '}
-              <span>Apply now</span>
+              <span>Register</span>
             </Button>
           </Box>
-          <Box component='img' src={foto_become} sx={{ width: '100%' }} />
+          <Box component='img' src={become_photo} sx={{ width: '100%', maxWidth: "400px", borderRadius: "10%", }} />
         </Box>
       </Wrapper>
     </Box>

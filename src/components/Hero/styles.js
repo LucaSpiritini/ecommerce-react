@@ -36,6 +36,8 @@ const styles = {
     position: 'relative',
     width: '100%',
     maxWidth: '375px',
+    borderRadius: "20px",
+    transform: "scaleX(-1)",
     [theme.breakpoints.up('md')]: {
       maxWidth: 'initial',
       width: 'initial',
@@ -81,6 +83,7 @@ const styles = {
     },
   }),
   link: (theme) => ({
+    cursor: "pointer",
     display: 'flex',
     alignItems: 'center',
     fontSize: '14px',
@@ -143,7 +146,7 @@ const styles = {
     boxSizing: 'border-box',
     border: '1px solid #9980B7',
     backdropFilter: 'blur(4px)',
-    borderRadius: '8px',
+    borderRadius: '50%',
     width: '185px',
   }),
   price: {

@@ -6,9 +6,8 @@ import Button from '@mui/material/Button'
 import Card from '@mui/material/Card'
 import Wrapper from '../Wrapper'
 
-import banner_photo from '../../assets/banner_photo.png'
+import banner_photo from '../../assets/banner_hero.webp'
 import ant_design_play from '../../assets/ant-design_play-circle-filled.svg'
-import eye from '../../assets/eye.svg'
 import bx_bxs_time from '../../assets/bx_bxs-time.svg'
 import el_group from '../../assets/el_group.svg'
 import planet from '../../assets/planet.svg'
@@ -23,12 +22,10 @@ const Hero = () => {
           <Box component='img' sx={styles.imgBanner} src={banner_photo} />
           <Box sx={{ zIndex: 3, position: 'relative' }}>
             <Typography variant='h2' sx={styles.title}>
-              A revolutionary way to educate.
+              the most complete pet supplies market
             </Typography>
             <Typography variant='body1' sx={styles.text}>
-              “Online education is electronically supported learning that relies
-              on the Internet for teacher/student interaction and the
-              distribution of class materials.”
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur repudiandae itaque dolore deserunt sint unde rerum quaerat, consequuntur fuga error ex perferendis
             </Typography>
             <Box sx={styles.wrapperBtn}>
               <Link sx={styles.link}>
@@ -36,8 +33,7 @@ const Hero = () => {
                 <Box component='span'>About Us</Box>
               </Link>
               <Button sx={styles.viewBtn}>
-                <Box component='img' src={eye} />
-                Products
+                List all products
               </Button>
             </Box>
           </Box>
@@ -45,17 +41,17 @@ const Hero = () => {
         <Box sx={styles.blockCards}>
           <Card sx={styles.card}>
             <Box component='img' src={bx_bxs_time} />
-            <Box sx={styles.price}>60,000+</Box>
-            <Box>Hours content</Box>
+            <Box sx={styles.price}>24hs</Box>
+            <Box>Fast Delivery</Box>
           </Card>
           <Card sx={styles.card}>
             <Box component='img' src={el_group} />
-            <Box sx={styles.price}>5,000+</Box>
-            <Box>Students</Box>
+            <Box sx={styles.price}>500+</Box>
+            <Box>Users</Box>
           </Card>
           <Card sx={styles.card}>
             <Box component='img' src={planet} />
-            <Box sx={styles.price}>110+</Box>
+            <Box sx={styles.price}>10+</Box>
             <Box>Countries</Box>
           </Card>
         </Box>
